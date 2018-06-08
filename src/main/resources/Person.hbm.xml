@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 注意包名。不写的话下面要写全限定名 -->
+<hibernate-mapping>
+	<class name="com.qm.entity.Student" table="students">
+		<id name="id" column="studentId" type="java.lang.Integer">
+			<generator class="identity"></generator>
+		</id>
+		<property name="name" column="studentName" type="string"></property>
+		<property name="password" column="studentPassword" type="string"></property>
+		<property name="hight" column="studentHight" type="int"></property>
+		<property name="sex" column="studentSex" type="int"></property>
+	</class>
+</hibernate-mapping>
