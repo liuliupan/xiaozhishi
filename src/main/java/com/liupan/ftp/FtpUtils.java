@@ -20,7 +20,7 @@ public class FtpUtils {
         //ftp登录账号
         public String username = "liupan";
         //ftp登录密码
-        public String password = "liupan";
+        public String password = "liupan1";
         
         public FTPClient ftpClient = null;
         
